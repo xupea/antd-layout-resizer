@@ -24,7 +24,7 @@ export default function ResizableContent({
   });
 
   return (
-    <Content className="unfixed" style={style} ref={ref}>
+    <Content className="unfixedContent" style={style} ref={ref}>
       {children}
     </Content>
   );

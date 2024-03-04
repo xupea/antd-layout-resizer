@@ -1,6 +1,6 @@
 {
   "name": "antd-layout-resizer",
-  "version": "1.0.4",
+  "version": "1.0.8",
   "description": "Resizer for ant design Layout component",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

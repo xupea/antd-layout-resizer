@@ -1,6 +1,5 @@
 import { useContext, useEffect, useRef } from "react";
 import ThemeContext from "../../context/ResizableContext";
-import "./index.css";
 
 interface ResizerProps {
   size?: number;
@@ -22,6 +21,16 @@ export interface ResizerAction {
   coordinate: Coordinate;
   barID: number;
 }
+
+const verticalStyle = {
+  width: "100%",
+  cursor: "ns-resize",
+};
+
+const horizontalStyle = {
+  height: "100%",
+  cursor: "ew-resize",
+};
 
 export default function Resizer({ size }: ResizerProps) {
   const theme = useContext(ThemeContext);
@@ -90,11 +99,10 @@ export default function Resizer({ size }: ResizerProps) {
 
   return (
     <div
-      className={theme.vertical ? "vertical" : "horizontal"}
       style={
         theme.vertical
-          ? { height: size, minHeight: size }
-          : { width: size, minWidth: size }
+          ? { height: size, minHeight: size, ...verticalStyle }
+          : { width: size, minWidth: size, ...horizontalStyle }
       }
       ref={ref}
     ></div>
