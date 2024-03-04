@@ -1,0 +1,4 @@
+.unfixedHeader {
+    height: unset!important;
+    transition: none!important;
+}

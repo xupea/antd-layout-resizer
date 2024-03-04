@@ -1,0 +1,5 @@
+.unfixed {
+    max-width: unset!important;
+    min-width: unset!important;
+    transition: none!important;
+}

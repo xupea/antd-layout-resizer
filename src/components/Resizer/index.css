@@ -1,0 +1,9 @@
+.horizontal {
+  height: 100%;
+  cursor: ew-resize;
+}
+
+.vertical {
+  width: 100%;
+  cursor: ns-resize;
+}

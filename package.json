@@ -1,0 +1,38 @@
+{
+  "name": "antd-layout-resizer",
+  "version": "1.0.4",
+  "description": "Resizer for ant design Layout component",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [
+    "antd",
+    "ant-design",
+    "layout",
+    "resizer"
+  ],
+  "author": "sysu.peter.hsu@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/react": "^18.2.61",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "antd": "*",
+    "react": ">=17.0.0"
+  },
+  "dependencies": {
+    "rxjs": "^7.8.1"
+  }
+}

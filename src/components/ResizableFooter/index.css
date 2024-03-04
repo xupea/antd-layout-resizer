@@ -1,0 +1,4 @@
+.unfixedFooter {
+    height: unset!important;
+    transition: none!important;
+}
